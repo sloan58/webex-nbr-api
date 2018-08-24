@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wbx="http://wbxservice.nbr.webservice.webex.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wbx:getStorageAccessTicket soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <siteId xsi:type="xsd:long">?</siteId>
+         <username xsi:type="xsd:string">?</username>
+         <password xsi:type="xsd:string">?</password>
+      </wbx:getStorageAccessTicket>
+   </soapenv:Body>
+</soapenv:Envelope>
