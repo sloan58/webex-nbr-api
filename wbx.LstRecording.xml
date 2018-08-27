@@ -1,20 +1,10 @@
-<serv:message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:serv="http://www.webex.com/schemas/2002/06/service">
-    <header>
-        <securityContext>
-            <webExID></webExID>
-            <password></password>
-            <siteID></siteID>
-        </securityContext>
-    </header>
-    <body>
-        <bodyContent
-            xsi:type="java:com.webex.service.binding.ep.LstRecording">
-            <listControl>
-                <startFrom>0</startFrom>
-                <maximumNum>175</maximumNum>
-            </listControl>
-            <returnSessionDetails>true</returnSessionDetails>
-        </bodyContent>
-    </body>
-</serv:message>
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:getNBRRecordIdList xmlns:ns1="nbrXmlService">
+            <siteID>?</siteID >
+            <username>?</username>
+            <password>?</password>
+        </ns1:getNBRRecordIdList>
+    </soapenv:Body>
+</soapenv:Envelope>
